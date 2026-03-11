@@ -79,14 +79,14 @@ body {
     gap: 2rem;
 }
 
-.first{
+.card-large{
     grid-row: 1/-1;
 
     display: grid;
     grid-template-rows: 8fr 4fr 2fr;
     gap: .2rem;
 
-    .top{
+    .card-image{
         display: grid;
         grid-template-rows: 5fr 1fr;
         gap: 2rem;
@@ -97,16 +97,21 @@ body {
             gap: 1rem;
         }
     }
+
+    .card-image, .card-description, .card-action{
+        padding: 2rem;
+        background-color: white;
+    }
 }
 
-.second{
+.card-post{
     grid-row: 1/-1;
-
+    
     display: grid;
     grid-template-rows: 1fr 5fr;
     gap: .2rem;
-
-    .top{
+    
+    .post-head{
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 1rem;
@@ -123,14 +128,19 @@ body {
         }
     }
 
-    .bottom .image{
+    .post-image .image{
         display: block;
         height: 100%;
         background-color: lightgray;
     }
+
+    .post-head, .post-image{
+        padding: 2rem;
+        background-color: white;
+    }
 }
 
-.third_top{
+.card-with-header{
     background-color: white;
     display: grid;
     grid-template-rows: 2fr 6fr 3fr;
@@ -138,7 +148,7 @@ body {
     padding: 2rem;
 }
 
-.third_bottom{
+.card-horizontal{
     background-color: white;
     padding: 2rem 0 2rem 2rem;
     display: grid;
