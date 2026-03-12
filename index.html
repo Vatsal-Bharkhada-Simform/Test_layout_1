@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Layout</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <div class="first card">
-        <div class="top">
-            <div class="image"></div>
-            <div class="desc">
-                <div class="desc_titles">
-                    <div class="text w-75"></div>
-                    <div class="text w-100"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Layout</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="grid__wrapper">
+            <div class="card card-large">
+                <div class="card-image">
+                    <div class="image"></div>
+                    <div class="desc">
+                        <div class="desc_titles text_cont">
+                            <div class="text w-50"></div>
+                            <div class="text w-90"></div>
+                        </div>
+                        <div class="action"></div>
+                    </div>
                 </div>
-                <div class="action"></div>
-            </div>
-        </div>
-        <div class="middle">
-            <div class="text w-90"></div>
-            <div class="text w-30"></div>
-            <div class="text w-75"></div>
-            <div class="text w-50"></div>
-        </div>
-        <div class="bottom">
-            <div></div>
-        </div>
-    </div>
-    <div class="second card">
-        <div class="top">
-            <div class="desc_titles">
-                <div class="text w-100"></div>
-                <div class="text w-75"></div>
-            </div>
-            <div class="circle"></div>
-        </div>
-        <div class="bottom">
-            <div class="image"></div>
-        </div>
-    </div>
-    <div class="third">
-        <div class="top card">
-            <div class="head w-75"></div>
-            <div class="image"></div>
-            <div class="text w-75"></div>
-            <div class="text w-30"></div>
-            <div class="text w-90"></div>
-        </div>
-        <div class="bottom card">
-            <div class="image"></div>
-            <div class="content">
-                <div class="wrapper">
-                    <div class="text w-100"></div>
+                <div class="card-description text_cont">
+                    <div class="text w-90"></div>
+                    <div class="text w-30"></div>
+                    <div class="text w-75"></div>
                     <div class="text w-50"></div>
-                    <div class="text w-75"></div>
                 </div>
-                <div class="wrapper">
+                <div class="card-action">
                     <div class="action"></div>
                 </div>
             </div>
+            <div class="card card-post">
+                <div class="post-head">
+                    <div class="top_titles text_cont">
+                        <div class="text w-100"></div>
+                        <div class="text w-75"></div>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="post-image">
+                    <div class="image"></div>
+                </div>
+            </div>
+            <div class="card card-with-header">
+                <div class="action w-75"></div>
+                <div class="image"></div>
+                <div class="text_cont">
+                    <div class="text w-75"></div>
+                    <div class="text w-30"></div>
+                    <div class="text w-90"></div>
+                </div>
+            </div>
+            <div class="card card-horizontal">
+                <div class="image"></div>
+                <div class="content">
+                    <div class="wrapper text_cont">
+                        <div class="text w-100"></div>
+                        <div class="text w-50"></div>
+                        <div class="text w-75"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="action"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
